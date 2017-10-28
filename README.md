@@ -1,6 +1,6 @@
 # Linux server configuration 
 
-This project involves configuring an Ubuntu 16.04 virtual machine to host a Flask web application using the Amazon Lightsail platform.
+This project involves setting up an Ubuntu 16.04 virtual machine to host a Flask web application utilizing the Amazon Lightsail platform.
 
 ## Main parameters
 * IP Address: 18.221.83.150
@@ -39,4 +39,35 @@ To                         Action      From
 123                        ALLOW       Anywhere  
 ```
 
+### Apache server configuration
+```
+<VirtualHost *:80>
+
+        ServerAdmin webmaster@localhost
+        DocumentRoot /home/catalog-user/catalog
+        ServerName localhost
+
+        WSGIDaemonProcess yourapplication user=catalog-user group=catalog-user threads=5
+        WSGIScriptAlias / /home/catalog-user/catalog/catalog.wsgi
+
+        <Directory /home/catalog-user/catalog/>
+                WSGIProcessGroup yourapplication
+                WSGIApplicationGroup %{GLOBAL}
+                Order allow,deny
+                Allow from all
+                Require all granted
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+
+```
+
+## Third party resources
+* http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/
+* https://www.postgresql.org/docs/9.5/static/index.html
+* https://aws.amazon.com/ru/premiumsupport/knowledge-center/new-user-accounts-linux-instance/
+* http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#retrieving-the-public-key
 
