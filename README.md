@@ -29,7 +29,7 @@ The SSH port has been changed from 22 to 2200. For remote access via the `grader
 ### Created PostreSQL Users
 * `catalog` - for database access to perforum CRUD operations.
 
-### Firwall configuration
+### UFW Firwall configuration
 ```
 Status: active
 To                         Action      From
