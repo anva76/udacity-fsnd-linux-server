@@ -1,4 +1,4 @@
-# Linux server configuration 
+# Linux Server Configuration 
 
 This project involves setting up an Ubuntu 16.04 virtual machine to host a Flask web application utilizing the Amazon Lightsail platform.
 
