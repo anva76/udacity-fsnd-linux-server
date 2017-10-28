@@ -27,7 +27,7 @@ The SSH port has been changed from 22 to 2200. For remote access via the `grader
 * `grader` - for review and feedback purposes; sudo access provided.
 
 ### Created PostreSQL Users
-* `catalog` - for database access to perforum CRUD operations.
+* `catalog` - for database access to perform CRUD operations.
 
 ### UFW Firwall configuration
 ```
