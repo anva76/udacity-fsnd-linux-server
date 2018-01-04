@@ -83,7 +83,6 @@ drwxr-xr-x 2 catalog-user catalog-user  4096 Oct 27 22:56 __pycache__
 drwxr-xr-x 6 catalog-user catalog-user  4096 Oct 27 22:37 static
 drwxr-xr-x 2 catalog-user catalog-user  4096 Oct 27 22:37 templates
 ```
-
 #### /home/catalog-user/catalog/static
 ```
 ubuntu@ip-172-26-14-219:/home/catalog-user/catalog/static$ ls -la
