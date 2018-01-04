@@ -65,6 +65,37 @@ To                         Action      From
 
 ```
 
+### Directory Listings
+#### /home/catalog-user/catalog
+```
+ubuntu@ip-172-26-14-219:/home/catalog-user/catalog$ ls -la
+total 64
+drwxr-xr-x 5 catalog-user catalog-user  4096 Oct 28 00:23 .
+drwxr-xr-x 6 catalog-user catalog-user  4096 Oct 27 22:55 ..
+-rw-rw-r-- 1 catalog-user catalog-user 18782 Oct 27 22:37 catalog_app.py
+-rw-rw-r-- 1 catalog-user catalog-user  1877 Oct 27 22:37 catalog.sql
+-rw-rw-r-- 1 catalog-user catalog-user   125 Oct 27 22:51 catalog.wsgi
+-rw-rw-r-- 1 catalog-user catalog-user   571 Oct 27 22:37 client_secrets.json
+-rw-rw-r-- 1 catalog-user catalog-user  2010 Oct 27 22:37 db_setup.py
+-rw-rw-r-- 1 catalog-user catalog-user  2905 Oct 27 22:37 google_auth.py
+drwxr-xr-x 2 catalog-user catalog-user  4096 Oct 27 22:56 __pycache__
+-rw-rw-r-- 1 catalog-user catalog-user    19 Oct 27 22:37 README.md
+drwxr-xr-x 6 catalog-user catalog-user  4096 Oct 27 22:37 static
+drwxr-xr-x 2 catalog-user catalog-user  4096 Oct 27 22:37 templates
+```
+
+#### /home/catalog-user/catalog/static
+```
+ubuntu@ip-172-26-14-219:/home/catalog-user/catalog/static$ ls -la
+total 24
+drwxr-xr-x 6 catalog-user catalog-user 4096 Oct 27 22:37 .
+drwxr-xr-x 5 catalog-user catalog-user 4096 Oct 28 00:23 ..
+drwxr-xr-x 2 catalog-user catalog-user 4096 Oct 27 22:37 css
+drwxr-xr-x 2 catalog-user catalog-user 4096 Oct 27 22:37 images
+drwxr-xr-x 2 catalog-user catalog-user 4096 Oct 27 22:37 js
+drwxr-xr-x 2 catalog-user catalog-user 4096 Oct 28 00:20 uploads
+```
+
 ## Third Party Resources
 * http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/
 * https://www.postgresql.org/docs/9.5/static/index.html
